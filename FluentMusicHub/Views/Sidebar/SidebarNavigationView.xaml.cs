@@ -1,33 +1,28 @@
-// Copyright (c) Microsoft Corporation and Contributors.
-// Licensed under the MIT License.
-
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
 
 namespace FluentMusicHub.Views.Sidebar
 {
+    /// <summary>
+    /// Represents a view to navigate between pages in application, place in sidebar.
+    /// </summary>
     public sealed partial class SidebarNavigationView : UserControl
     {
+        /// <summary>
+        /// Create a new instance of sidebar navigation view.
+        /// </summary>
         public SidebarNavigationView()
         {
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Represents an event handler for the SelectionChanged event of a button.
+        /// </summary>
+        /// <remarks>
+        /// Triggers children's SelectingChanged event.
+        /// </remarks>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListView listView = sender as ListView;
