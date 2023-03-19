@@ -14,6 +14,7 @@
     <None Remove="Views\MainPage.xaml" />
     <None Remove="Views\Sidebar.xaml" />
     <None Remove="Views\Sidebar\HomeButtonView.xaml" />
+    <None Remove="Views\Sidebar\SearchButtonView.xaml" />
     <None Remove="Views\Sidebar\SidebarNavigationView.xaml" />
     <None Remove="Views\Sidebar\SidebarPlaylistView.xaml" />
   </ItemGroup>
@@ -52,6 +53,27 @@
 
   <ItemGroup>
     <Resource Remove="Views\Sidebar\SidebarNavigationView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Assets\home-fill-size-48-black.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\home-fill-size-48-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\home-outline-size-48-black.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\home-outline-size-48-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\Sidebar\SearchButtonView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>
